@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -14,7 +13,7 @@
 	<title>TMT Consultancy - Cryptocurrency</title>
 	<link rel="icon" type="image/png" href="./assets/img/logo-icon.png">
 	<!-- Latest Bootstrap min CSS -->
-	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext"
 		rel="stylesheet">
@@ -22,18 +21,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/fonts/themify-icons.css">
-	<link rel="stylesheet" href="assets/css/materialdesignicons-min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/0.1.2/themify-icons.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css">
 	<!--- owl carousel Css-->
-	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
-	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<!-- animate CSS -->
-	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<!-- MAGNIFIC CSS -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 	<!-- Style CSS -->
-<link rel="stylesheet" href="/assets/css/style-two.css">
+<link rel="stylesheet" href="assets/css/style-two.css">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -41,13 +40,11 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 </head>
-
 <style>
 	html,
 	body {
 		font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 	}
-
 	.home_bg {
 		position: relative;
 		background-image: url('./assets/img/hero-bg.svg');
@@ -56,9 +53,6 @@
 		overflow: hidden;
 	}
 
-	
-
-
 	/* Mobile version */
 	@media (max-width: 768px) {
 		.home_bg {
@@ -66,17 +60,14 @@
 			background-size: cover;
 			background-position: center;
 		}
-
 		.home_bg::before {
 			display: none;
 			animation: none;
 		}
-
 		.arc-aura {
 			display: none;
 		}
 	}
-
 	.hero-grad {
 		background: linear-gradient(to bottom, #ffff 0%, #dfe4e7 23%, #98a1a5 100%);
 		-webkit-background-clip: text;
@@ -84,28 +75,23 @@
 		padding: 0px 0px;
 		display: block;
 	}
-
 	.btn_tmt:hover {
 		background: #000;
 		transform: translateY(-2px);
 	}
-
 	.navbar .navbar-nav .nav-link {
 		color: #fff;
 		/* default color */
 		transition: color 0.3s ease;
 	}
-
 	.navbar .navbar-nav .nav-link:hover {
 		color: #499FE5 !important;
 	}
-
 	#home {
 		display: flex;
 		align-items: center;
 		/* vertical center */
 	}
-
 	.btn-inner-glow {
 		font-family: 'Poppins', sans-serif;
 		display: inline-flex;
@@ -120,32 +106,23 @@
 		border: 1px solid rgba(14, 229, 248, 0.6);
 		position: relative;
 		cursor: pointer;
-
 		/* INNER GLOW */
 		box-shadow:
 			inset 0 0 10px rgba(14, 229, 248, 0.6),
 			inset 0 0 20px rgba(14, 229, 248, 0.3);
-
 		backdrop-filter: blur(6px);
 		transition: all 0.3s ease;
 	}
-
 	@media (max-width: 768px) {
 		.btn-inner-glow {
 			font-family: 'Poppins', sans-serif;
 			font-weight: 400;
-
 			font-size: 12px !important;
-
 			line-height: 110.00000000000001%;
 			letter-spacing: 0px;
 			text-align: center;
-
 		}
 	}
-
-
-
 	/* Soft inner highlight (top shine) */
 	.btn-inner-glow::before {
 		content: "";
@@ -158,31 +135,25 @@
 		opacity: 0.6;
 		pointer-events: none;
 	}
-
 	/* Icon */
 	.btn-inner-glow .icon {
 		color: #0EE5F8;
 	}
-
 	/* Hover = stronger inner glow */
 	.btn-inner-glow:hover {
 		box-shadow:
 			inset 0 2px 8px rgba(14, 229, 248, 0.7),
 			inset 0 -2px 8px rgba(14, 229, 248, 0.4);
 	}
-
 	.hero-text p {
 		margin: 0 auto;
 		/* centers the block */
 		text-align: center;
 		/* centers the text */
 	}
-
 	#home .hero-text p {
 		width: 65%;
 	}
-
-
 	.about_p {
 		color: #fff;
 		font-family: 'Poppins', sans-serif;
@@ -196,7 +167,6 @@
 		margin-top: 25px;
 		margin-bottom: 35px;
 	}
-
 	/* Grid container */
 	.programs__grid {
 		display: grid;
@@ -205,83 +175,65 @@
 		gap: 20px;
 		justify-content: center;
 	}
-
 	/* Card container */
 	.program-card {
 		position: relative;
 		overflow: hidden;
-
 		width: 100%;
 		min-height: 160px;
 		padding: 35px 40px;
-
 		border: 1px solid #347481;
 		border-radius: 40px;
 		background: #151515;
-
 		transition: border-color 0.2s ease, box-shadow 0.2s ease;
 	}
-
 	.program-card::before {
 		content: "";
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
-
 		opacity: 0;
-
 		background: radial-gradient(circle at 0% 50%,
 				rgba(156, 234, 250, 0.829) 0%,
 				rgba(100, 229, 255, 0.15) 25%,
 				transparent 60%);
-
 		filter: blur(25px);
 		transform: translateX(-40%);
 	}
-
 	.program-card:hover::before {
 		opacity: 1;
 		animation: glowSweep 4s linear infinite;
 	}
-
 	@keyframes glowSweep {
 		0% {
 			transform: translateX(-20%);
 			opacity: 0;
 		}
-
 		5% {
 			opacity: 0.9;
 		}
-
 		25% {
 			opacity: 1;
 		}
-
 		55% {
 			opacity: 1;
 		}
-
 		85% {
 			opacity: 1;
 		}
-
 		98% {
 			opacity: 1;
 		}
-
 		100% {
 			transform: translateX(80%);
 			opacity: 1;
 		}
 	}
-
 	.program-card:hover {
 		border: 3.5px solid #37A0B5;
 		/* box-shadow: 0 0 20px rgba(100, 229, 255, 0.15); */
 		/* background-color: #172128; */
 	}
-
 	/* Title */
 	.program-card__title {
 		font-size: 16px;
@@ -289,7 +241,6 @@
 		color: #fff;
 		margin-bottom: 20px;
 	}
-
 	/* Description */
 	.program-card__desc {
 		font-size: 12px;
@@ -297,25 +248,21 @@
 		color: #fff;
 		line-height: 1.5;
 	}
-
 	/* Tablet (optional improvement) */
 	@media (max-width: 992px) {
 		.programs__grid {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
-
 	@media (max-width:768px) {
 		#solutions .programs-carousel {
 			position: relative;
 		}
-
 		#solutions .programs__grid {
 			position: relative;
 			height: 420px;
 			overflow: hidden;
 		}
-
 		/* IMPORTANT: reset default grid behavior */
 		#solutions .program-card {
 			position: absolute;
@@ -330,31 +277,23 @@
 			min-height: 120px;
 			pointer-events: none;
 		}
-
 		#solutions .program-card__title {
 			font-family: 'Poppins', sans-serif;
 			font-weight: 600;
-
 			font-size: 16px;
 			margin-bottom: 15px;
 			line-height: 140%;
 			letter-spacing: -0.5px;
 			text-align: center;
-
-
 		}
-
 		#solutions .program-card__desc {
 			font-family: 'Poppins', sans-serif;
 			font-weight: 400;
 			font-size: 12px !important;
-
 			line-height: 140%;
 			letter-spacing: -0.5px;
 			color: #FFFFFF;
-
 		}
-
 		/* ACTIVE CARD (center) */
 		#solutions .program-card.active {
 			opacity: 1;
@@ -362,38 +301,31 @@
 			z-index: 3;
 			pointer-events: auto;
 		}
-
 		#solutions .program-card.prev {
 			opacity: 0.5;
 			transform: translate(-50%, -135%) scale(0.88);
 			z-index: 2;
 		}
-
 		#solutions .program-card.prev .program-card__title,
 		#solutions .program-card.next .program-card__title {
 			font-size: 12px;
 			margin-top: 5px;
 		}
-
 		#solutions .program-card.prev .program-card__desc,
 		#solutions .program-card.next .program-card__desc {
 			font-size: 10px !important;
 		}
-
-
 		#solutions .program-card.next {
 			opacity: 0.5;
 			transform: translate(-50%, 35%) scale(0.88);
 			z-index: 2;
 		}
-
 		/* HIDDEN CARDS */
 		#solutions .program-card.hidden {
 			opacity: 0;
 			transform: translate(-50%, -50%) scale(0.7);
 			z-index: 1;
 		}
-
 		#solutions .scroll-dots {
 			position: absolute;
 			right: 10px;
@@ -401,12 +333,10 @@
 			top: 50%;
 			transform: translateY(-50%);
 			z-index: 9999;
-
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
 		}
-
 		#solutions .scroll-dots .dot {
 			width: 8px;
 			height: 8px;
@@ -414,24 +344,20 @@
 			background: rgba(255, 255, 255, 0.3);
 			transition: all 0.3s ease;
 		}
-
 		#solutions .scroll-dots .dot.active {
 			height: 24px;
 			border-radius: 20px;
 			background: #fff;
 		}
 	}
-
 	/* Optional scrollbar styling */
 	.programs__grid::-webkit-scrollbar {
 		width: 4px;
 	}
-
 	.programs__grid::-webkit-scrollbar-thumb {
 		background: #64e5ff;
 		border-radius: 10px;
 	}
-
 	.portfolio_list_img {
 		display: flex;
 		justify-content: center;
@@ -439,29 +365,23 @@
 		height: 100%;
 		position: relative;
 	}
-
-
 	.line {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-
 	#who-we-serve .portfolio_list_img {
 		position: relative;
 		min-height: 500px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
 	}
-
 	/* Hiding mob logo */
 	#who-we-serve .mob-logo-who-we-serve {
 		display: none;
 	}
-
 	@media only screen and (max-width:768px) {
 		#who-we-serve .portfolio_list_img {
 			min-height: 200px !important;
@@ -470,46 +390,34 @@
 			align-items: center;
 			width: 100%;
 			transform: scale(0.9);
-
 		}
-
-
 		#who-we-serve .center-logo {
 			display: none;
 		}
-
 		#who-we-serve .mob-logo-who-we-serve {
 			display: block;
 			width: 100%;
 			height: auto;
 		}
-
 		#who-we-serve .buy_sell_list p {
 			font-size: 12px;
-
 		}
-
 		#who-we-serve .buy_sell_list {
 			min-height: 50px;
 			padding: 15px;
 			transform: none !important;
 			margin-bottom: 15px;
-
 		}
-
 		#who-we-serve .row {
 			flex-direction: column;
 		}
-
 		.portfolio_list_img {
 			transform: none;
 		}
-
 		.logo-glow {
 			position: relative;
 			display: inline-block;
 		}
-
 		.logo-glow::after {
 			content: '';
 			position: absolute;
@@ -522,10 +430,7 @@
 			filter: blur(4px);
 			z-index: -1;
 		}
-
-
 	}
-
 	#who-we-serve .logo-wrap {
 		position: relative;
 		display: flex;
@@ -533,12 +438,10 @@
 		align-items: center;
 		min-height: 500px;
 	}
-
 	#who-we-serve .center-logo {
 		transform: scale(1.2);
 		z-index: 2;
 	}
-
 	/* ellipse glow */
 	/* =========================
    INNER ELLIPSE (blur 15px)
@@ -546,113 +449,82 @@
 	.logo-wrap::after {
 		content: "";
 		position: absolute;
-
 		width: 50%;
 		height: 46px;
-
 		left: 50%;
 		top: 80%;
 		transform: translateX(-50%);
-
 		background: rgba(31, 170, 213, 0.85);
 		opacity: 0.84;
 		border-radius: 50%;
-
 		filter: blur(10px);
-
 		z-index: 1;
 		pointer-events: none;
 	}
-
 	/* =========================
    OUTER GLOW (blur 55px)
 ========================= */
 	.logo-wrap::before {
 		content: "";
 		position: absolute;
-
 		width: 50%;
 		height: 120px;
-
 		left: 50%;
 		top: 80%;
 		transform: translateX(-50%);
 		opacity: 0.35;
-
 		background: rgba(31, 170, 213, 0.25);
 		border-radius: 50%;
-
 		filter: blur(55px);
-
 		z-index: 0;
 		pointer-events: none;
 	}
-
-
-
 	#who-we-serve .line-lt {
 		transform: translate(-179%, -170%);
 	}
-
 	#who-we-serve .line-lm {
 		transform: translate(-150%, -72%);
 	}
-
 	#who-we-serve .line-lb {
 		transform: translate(-167%, 65%);
 	}
-
 	#who-we-serve .line-rt {
 		transform: translate(76%, -170%);
 	}
-
 	#who-we-serve .line-rm {
 		transform: translate(56%, -72%);
 	}
-
 	#who-we-serve .line-rb {
 		transform: translate(85%, 85%);
 	}
-
 	/* ================= ORBIT / CIRCLE EFFECT ================= */
-
 	/* LEFT COLUMN (push outward like arc left side of circle) */
 	#who-we-serve .col-lg-4:first-child .buy_sell_list:nth-of-type(1) {
 		transform: translate(37%, -60px);
 	}
-
 	#who-we-serve .col-lg-4:first-child .buy_sell_list:nth-of-type(2) {
 		transform: translate(2%, 0);
 	}
-
 	#who-we-serve .col-lg-4:first-child .buy_sell_list:nth-of-type(3) {
 		transform: translate(35%, 60px);
 	}
-
 	/* RIGHT COLUMN (mirror outward like arc right side of circle) */
 	#who-we-serve .col-lg-4:last-child .buy_sell_list:nth-of-type(1) {
 		transform: translate(20%, -40px);
 	}
-
 	#who-we-serve .col-lg-4:last-child .buy_sell_list:nth-of-type(2) {
 		transform: translate(150px, 0);
 	}
-
 	#who-we-serve .col-lg-4:last-child .buy_sell_list:nth-of-type(3) {
 		transform: translate(10%, 60px);
 	}
-
-
-
 	/* ROW: vertical center */
-
 	/* ===== BASE ===== */
 	#who-we-serve .row {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
-
 	.buy_sell_list {
 		width: 343px;
 		min-height: 100px;
@@ -660,20 +532,17 @@
 		border: 1px solid transparent;
 		border-radius: 24px;
 		text-align: center;
-
 		background:
 			linear-gradient(#0C1217, #0C1217) padding-box,
 			linear-gradient(272.29deg,
 				#1A262E 1.73%,
 				#64E5FF 50%,
 				#1A262E 98.27%) border-box;
-
 		transition: 0.3s ease;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-
 	/* CENTER IMAGE */
 	.portfolio_list_img {
 		display: flex;
@@ -684,56 +553,43 @@
 		max-width: none;
 		height: auto;
 	}
-
-
-
-
 	/* ===== MOBILE RESET ===== */
 	@media(max-width:768px) {
 		#who-we-serve .row {
 			flex-direction: column;
 		}
-
 		.buy_sell_list {
 			transform: none !important;
 			width: 100%;
 		}
-
 		.portfolio_list_img {
 			transform: none;
 		}
 	}
-
 	/* Rotation animation */
 	@keyframes rotate360 {
 		from {
 			transform: rotate(0deg);
 		}
-
 		to {
 			transform: rotate(360deg);
 		}
 	}
-
 	.h2-font {
 		font-size: 44px;
 		font-weight: 500;
 	}
-
-
 	@media (max-width: 567px) {
 		.h2-font {
 			font-size: 26px;
 		}
 	}
-
 	/* ===== CONTAINER ===== */
 	.tmt1-container {
 		max-width: 1200px;
 		margin: 0 auto;
 		/* padding:0 20px; */
 	}
-
 	/* ===== ROW ===== */
 	.tmt-row {
 		display: flex;
@@ -741,82 +597,65 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
-
 	/* ===== COLUMNS ===== */
 	.tmt-col-lg-8 {
 		flex: 0 0 66.66%;
 	}
-
 	.tmt-col-lg-4 {
 		flex: 0 0 33.33%;
 	}
-
 	.download_area .tmt-col-lg-8 {
 		flex: 0 0 45%;
 		max-width: 45%;
 	}
-
 	.download_area .tmts-col-lg-4 {
 		flex: 0 0 55%;
 		max-width: 55%;
 	}
-
 	@media (min-width: 992px) {
 		.download_area .tmt-col-lg-8 {
 			flex: 0 0 45%;
 			max-width: 45%;
 		}
-
 		.download_area .tmts-col-lg-4 {
 			flex: 0 0 55%;
 			max-width: 55%;
 		}
 	}
-
 	@media (max-width: 991px) {
-
 		.download_area .tmt-col-lg-8,
 		.download_area .tmts-col-lg-4 {
 			flex: 0 0 100%;
 			max-width: 100%;
 		}
-
 		.download_area .app_img {
 			justify-content: center;
 			margin-top: 30px;
 		}
 	}
-
 	/* ===== MOBILE ===== */
 	@media(max-width:768px) {
-
 		.tmt-col-lg-8,
 		.tmt-col-lg-4 {
 			flex: 0 0 100%;
 		}
-
 		.carousel {
 			height: 220px;
 			overflow: hidden;
 		}
-
 		.program-card-scroll {
 			min-width: 50%;
 		}
-
 		.program-card-scroll.left {
 			transform: translateX(-70px) scale(.8);
 		}
-
 		.program-card-scroll.right {
 			transform: translateX(70px) scale(.8);
 		}
-
 		.program-card-scroll.active {
 			transform: translateX(0) scale(1);
 		}
 	}
-
 	/* ===== TEXT ===== */
 	.app-text h2 {
 		margin: 0 0 10px 0;
@@ -824,7 +663,6 @@
 		font-family: 'Poppins', sans-serif;
 		font-size: 46px;
 	}
-
 	.download_area .app-text p {
 		margin-bottom: 30px;
 		font-family: 'Poppins', sans-serif;
@@ -833,7 +671,6 @@
 		color: #AEC1CC;
 		;
 	}
-
 	/* ===== CAROUSEL ===== */
 	.carousel {
 		position: relative;
@@ -844,36 +681,26 @@
 		overflow: hidden;
 		margin-top: 20px;
 	}
-
 	/* ===== CARD ===== */
 	.program-card-scroll {
 		position: absolute;
-
 		width: 255px;
 		height: 258px;
-
 		padding: 24px;
 		gap: 10px;
-
 		border: 3px solid #347481;
 		border-radius: 12px;
-
 		background: #1A262E;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 		text-align: center;
-
 		transition: all .5s ease;
 		opacity: .3;
 		transform: scale(.75);
-
 		box-sizing: border-box;
 	}
-
 	/* ===== TEXT FIX ===== */
 	.program-card-scroll h4 {
 		display: block;
@@ -881,14 +708,12 @@
 		margin: 0 0 6px 0;
 		line-height: 1.3;
 	}
-
 	.program-card-scroll p {
 		display: block;
 		width: 100%;
 		margin: 0;
 		line-height: 1.4;
 	}
-
 	/* ===== ACTIVE ===== */
 	.program-card-scroll.active {
 		transform: scale(1);
@@ -896,7 +721,6 @@
 		z-index: 5;
 		border: 3px solid transparent;
 		border-radius: 12px;
-
 		background:
 			linear-gradient(#1A262E, #1A262E) padding-box,
 			linear-gradient(272.29deg,
@@ -904,24 +728,20 @@
 				#64E5FF 50%,
 				#1A262E 98.27%) border-box;
 	}
-
 	/* ===== SIDE ===== */
 	.program-card-scroll.left {
 		transform: translateX(-180px) scale(.85);
 		opacity: .5;
 	}
-
 	.program-card-scroll.right {
 		transform: translateX(180px) scale(.85);
 		opacity: .5;
 	}
-
 	/* ===== HIDDEN ===== */
 	.program-card-scroll.hidden {
 		opacity: 0;
 		transform: scale(.6);
 	}
-
 	/* ===== DOTS ===== */
 	.programs__dots {
 		display: flex;
@@ -930,7 +750,6 @@
 		margin-top: 20px;
 		margin-bottom: 15px;
 	}
-
 	.dot {
 		width: 8px;
 		height: 8px;
@@ -938,24 +757,19 @@
 		background: rgba(255, 255, 255, .3);
 		cursor: pointer;
 	}
-
 	.dot.active {
 		background: #64e5ff;
 		transform: scale(1.3);
 	}
-
 	/* IMAGE */
 	.app_img {
 		display: flex;
 		justify-content: flex-end;
 	}
-
 	.coin-wrap {
 		position: relative;
 		display: inline-block;
 	}
-
-
 	.app_img img {
 		width: 100%;
 		max-width: none;
@@ -963,56 +777,45 @@
 		display: block;
 		animation: glow 5s ease-in-out infinite;
 	}
-
 	@keyframes glow {
-
 		0%,
 		100% {
 			filter:
 				brightness(1.1) saturate(1) contrast(1.1) drop-shadow(0 0 10px rgba(0, 180, 255, 0.6)) drop-shadow(0 0 25px rgba(0, 180, 255, 0.4));
 		}
-
 		50% {
 			filter:
 				brightness(1.2) saturate(1.3) contrast(1.2) drop-shadow(0 0 20px rgba(0, 180, 255, 0.85)) drop-shadow(0 0 50px rgba(0, 180, 255, 0.55));
 		}
 	}
-	
+
 	.hand-img {
 		/* animation: floatHand 4s ease-in-out infinite; */
 		transform-origin: center;
 	}
-
-
 	/* for investment programs */
 	/* DEFAULT (DESKTOP) */
 	.download_area.section-padding {
 		/* padding: 100px; */
 	}
-
 	.download_area {
 		padding-bottom: 70px;
 	}
-
 	/* MOBILE */
 	@media (max-width: 768px) {
 		.download_area {
 			padding: 20px;
 		}
 	}
-
 	.right .item {
 		opacity: 1 !important;
 		transform: none !important;
 		visibility: visible !important;
 	}
 </style>
-
 <body data-spy="scroll" data-offset="80">
-
 	<!-- particles -->
 	<!-- <div id="particles-js"></div>	 -->
-
 	<!-- START PRELOADER -->
 	<div class="preloader">
 		<div class="spinner">
@@ -1021,27 +824,21 @@
 		</div>
 	</div>
 	<!-- END PRELOADER -->
-
 	<!-- START NAVBAR -->
 	<nav id="navbar" class="homepage navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
 		<div class="container d-flex align-items-center justify-content-between">
-
 			<!-- Logo (Left) -->
 			<a class="navbar-brand" href="index.html">
 				<img src="assets/img/tmt-logo.svg" alt="TMT Consultancy">
 			</a>
-
 			<!-- Mobile Toggle -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 				<span class="mdi mdi-menu"></span>
 			</button>
-
 			<!-- Center Menu + Right Button -->
 			<div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-
 				<!-- Empty div (helps center alignment) -->
 				<div class="d-none d-lg-block"></div>
-
 				<!-- Menu (Center) -->
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item"><a class="nav-link" href="about-us.html">About TMT</a></li>
@@ -1050,17 +847,14 @@
 					<li class="nav-item"><a class="nav-link" href="#who-we-serve">Who we serve</a></li>
 					<li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
 				</ul>
-
 				<!-- Button (Right) -->
 				<div class="d-flex">
 					<a href="contact-us.html" class="btn_tmt">Start Investing</a>
 				</div>
-
 			</div>
 		</div>
 	</nav>
 	<!-- END NAVBAR -->
-
 	<!-- START HOME -->
 	<section id="home" class="home_bg">
 		<div class="container">
@@ -1091,12 +885,10 @@
 						</div>
 					</div>
 				</div><!--- END COL -->
-
 			</div><!--- END ROW -->
 		</div><!--- END CONTAINER -->
 	</section>
 	<!-- END  HOME -->
-
 	<!-- START ABOUT -->
 	<section id="solutions" class=" section-padding" style="background-color: #000; padding-bottom: 70px;">
 		<div class="container">
@@ -1109,7 +901,6 @@
 					Professionally Managed, Diversified <span class="hero-grad" style="font-weight: 500;">Investment
 						Programs</span>
 				</h2>
-
 				<p class="about_pt" style="margin-top: 20px; margin-bottom: 10px; font-size: 20px; font-weight: 500;">
 					Explore a
 					wide range of investment programs designed to suit different financial
@@ -1169,12 +960,10 @@
 					<span class="dot"></span>
 					<span class="dot"></span>
 					<span class="dot"></span>
-
 				</div>
 			</div>
 	</section>
 	<!-- END ABOUT -->
-
 	<section class="section1" style="margin-top:0;">
 		<div class="container">
 			<div class="text-center">
@@ -1190,7 +979,6 @@
 					every client</p>
 			</div>
 		</div>
-
 		<div class="content">
 			<div class="left">
 				<div class="float-img">
@@ -1199,7 +987,6 @@
 					</div>
 				</div>
 			</div>
-
 			<div class="right">
 				<div class="item">
 					<h3 style="font-size: 24px; font-weight: 500;">Proven Performance</h3>
@@ -1208,7 +995,6 @@
 						Our strategies deliver an average of 3.5% monthly with minimal drawdowns.
 					</p>
 				</div>
-
 				<div class="item">
 					<h3 style="font-size: 24px; font-weight: 500;">Smart Portfolio Adjustments – Realtime</h3>
 					<p class="hero-grad" style="font-size: 16px; font-weight: 400;">
@@ -1216,7 +1002,6 @@
 						risk-adjusted returns.
 					</p>
 				</div>
-
 				<div class="item">
 					<h3 style="font-size: 24px; font-weight: 500;">Quant + Professional Trading – AI Powered</h3>
 					<p class="hero-grad" style="font-size: 16px; font-weight: 400;">
@@ -1224,7 +1009,6 @@
 						human decision-making.
 					</p>
 				</div>
-
 				<div class="item">
 					<h3 style="font-size: 24px; font-weight: 500;">Reporting & Analytics – Quarterly Reports</h3>
 					<p class="hero-grad" style="font-size: 16px; font-weight: 400;">
@@ -1235,11 +1019,9 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="download_area">
 		<div class="tmt1-container">
 			<div class="tmt-row">
-
 				<!-- LEFT -->
 				<div class="tmt-col-lg-8">
 					<button class="btn-inner-glow fade-up delay-1"
@@ -1248,48 +1030,38 @@
 					</button>
 					<div class="app-text">
 						<h2>Discover Our <span class="hero-grad">Investment Programs</span></h2>
-
 						<p>
 							Your path to financial growth transparent returns,
 							predictable income, and capital protection backed
 							by professional traders and proven methodologies
 						</p>
-
 						<!-- CAROUSEL -->
 						<div class="carousel">
-
 							<article class="program-card-scroll active">
 								<h4 style="font-size: 16px; font-weight: 600;">3.5% Monthly Returns</h4>
 								<p style="font-size: 12px; font-weight: 400;">Consistent performance</p>
 							</article>
-
 							<article class="program-card-scroll">
 								<h4 style="font-size: 16px; font-weight: 600;">Quarterly Payout Schedule</h4>
 								<p style="font-size: 12px; font-weight: 500">Regular, timely distributions</p>
 							</article>
-
 							<article class="program-card-scroll">
 								<h4 style="font-size: 16px; font-weight: 600;">Low–Moderate Risk Profile</h4>
 								<p style="font-size: 12px; font-weight: 500">Designed for capital protection</p>
 							</article>
-
 							<article class="program-card-scroll">
 								<h4 style="font-size: 16px; font-weight: 600;">6-Month Minimum Term</h4>
 								<p style="font-size: 12px; font-weight: 500">Flexible investment horizons</p>
 							</article>
-
 							<article class="program-card-scroll">
 								<h4 style="font-size: 16px; font-weight: 600;">No Minimum Investment</h4>
 								<p style="font-size: 12px; font-weight: 500">Start with any amount</p>
 							</article>
-
 							<article class="program-card-scroll">
 								<h4 style="font-size: 16px; font-weight: 600;">42%+ Annual Return</h4>
 								<p style="font-size: 12px; font-weight: 500">Compounded, long-term growth</p>
 							</article>
-
 						</div>
-
 						<!-- DOTS -->
 						<div class="programs__dots">
 							<span class="dot active"></span>
@@ -1299,23 +1071,17 @@
 							<span class="dot"></span>
 							<span class="dot"></span>
 						</div>
-
 					</div>
 				</div>
-
 				<!-- RIGHT -->
 				<div class="tmts-col-lg-4">
 					<div class="app_img">
-
 						<img src="assets/img/programs1.png" alt="" class="hand-img">
-
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
-
 	<section id="how-it-works" class="section-padding">
 		<div class="container">
 			<div class="section-title text-center">
@@ -1355,7 +1121,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="process-dots">
 					<div class="process-dot active"></div>
 					<div class="process-dot"></div>
@@ -1365,7 +1130,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section id="who-we-serve" class="buy_sell_area section-padding">
 		<div class="container">
 			<center><button class="btn-inner-glow fade-up delay-1"
@@ -1381,28 +1145,23 @@
 				</p>
 			</div>
 			<div class="row">
-
 				<!-- LEFT COLUMN -->
 				<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp">
 					<div class="buy_sell_list card-lt">
 						<p>Individuals</p>
 					</div>
-
 					<div class="buy_sell_list card-lm">
 						<p>Corporate Treasuries <br>and Company Reserves</p>
 					</div>
-
 					<div class="buy_sell_list card-lb">
 						<p>Expats and <br>International Clients</p>
 					</div>
 				</div>
-
 				<!-- CENTER IMAGE -->
 				<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInDown">
 					<div class="portfolio_list_img">
 						<div class="connectors">
 							<div class="line line-lt">
-
 								<svg xmlns="http://www.w3.org/2000/svg" width="119" height="84" viewBox="0 0 119 84"
 									fill="none">
 									<path class="connector"
@@ -1411,7 +1170,6 @@
 									<path class="flow-path"
 										d="M0.404114 1.40166C2.81479 0.336689 5.62969 1.46311 6.64021 3.89712L31.0657 62.7303C36.0247 74.6752 47.6865 82.4604 60.6198 82.4604L78.8305 82.4604L118.404 82.4605"
 										stroke="#64E5FF" stroke-width="4" stroke-linecap="round" fill="none" />
-
 									<defs>
 										<linearGradient id="paint0_linear_lt" x1="116.624" y1="39.872" x2="2.69237"
 											y2="39.872" gradientUnits="userSpaceOnUse">
@@ -1461,7 +1219,6 @@
 									</defs>
 								</svg>
 							</div>
-
 							<div class="line line-rt">
 								<svg xmlns="http://www.w3.org/2000/svg" width="124" height="84" viewBox="0 0 124 84"
 									fill="none">
@@ -1522,7 +1279,6 @@
 									</defs>
 								</svg>
 							</div>
-
 						</div>
 						<div class="logo-wrap">
 							<img src="assets/img/logo-center.png" class="img-fluid center-logo logo-who-we-serve"
@@ -1531,20 +1287,16 @@
 						<div class="logo-glow">
 							<img src="assets/img/serve1.png" class="img-fluid mob-logo-who-we-serve" alt="" />
 						</div>
-
 					</div>
 				</div>
-
 				<!-- RIGHT COLUMN -->
 				<div class="col-lg-4 col-sm-12 col-xs-12 wow fadeInUp">
 					<div class="buy_sell_list card-rt">
 						<p>Entrepreneurs and <br>Business Owners</p>
 					</div>
-
 					<div class="buy_sell_list card-rm">
 						<p>High-Net-Worth Clients <br>and Family Offices</p>
 					</div>
-
 					<div class="buy_sell_list card-rb">
 						<p>Clients Seeking <br>Passive Income</p>
 					</div>
@@ -1552,35 +1304,27 @@
 			</div>
 		</div>
 	</section>
-
 	<!-- START PROMOTION -->
 	<section class="tmt_hero" style="background-image: url('assets/img/bg/cta-bg.png'); background-size: 100% 100%;">
 		<div class="tmt_col tmt_side"></div>
 		<div class="tmt_col tmt_center">
 			<div class="tmt_container">
 				<h1 class="tmt_title">Start Your Investment Journey Today</h1>
-
 				<p class="tmt_subtitle">
 					Join thousands of investors who trust TMT Consultancy for stable returns,
 					expert management, and long-term wealth creation.
 				</p>
-
 				<div class="tmt_features">
 					<div class="tmt_feature"><img src="assets/img/mentoring.png" alt=""> Free Consultation</div>
 					<div class="tmt_feature"><img src="assets/img/cash.png" alt=""> No Hidden Fees</div>
 					<div class="tmt_feature"><img src="assets/img/support.png" alt=""> Expert Support</div>
 				</div>
-
 				<a href="contact-us.html"> <button class="tmt_cta">Get Started Today</button></a>
 			</div>
 		</div>
-
 		<div class="tmt_col tmt_side"></div>
-
 	</section>
 	<!-- END PROMOTION -->
-
-
 	<!-- START FOOTER -->
 	<div class="footer">
 		<div class="container">
@@ -1608,203 +1352,159 @@
 		</div><!--- END CONTAINER -->
 	</div>
 	<!-- END FOOTER -->
-
 	<!-- Latest jQuery -->
-	<script src="assets/js/jquery-1.12.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled and minified Bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 	<!-- modernizer JS -->
-	<script src="assets/js/modernizr-2.8.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<!-- owl-carousel min js  -->
-	<script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<!-- magnific-popup js -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<!-- jquery counterup -->
-	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.counterup/1.0/jquery.counterup.min.js"></script>
 	<script src="assets/js/countdown.js"></script>
 	<!-- particles -->
 	<!-- <script src="assets/js/particles.min.js"></script> -->
 	<script src="assets/js/app.js"></script>
 	<!-- WOW - Reveal Animations When You Scroll -->
-	<script src="assets/js/wow.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<!-- scrolltopcontrol js -->
 	<script src="assets/js/scrolltopcontrol.js"></script>
 	<!-- scripts js -->
 	<script src="assets/js/scripts.js"></script>
-
 	<script>
 		const slider = document.querySelector('.process-steps');
 		const dots = document.querySelectorAll('.process-dot');
 		const total = dots.length;
-
 		function updateDots(index) {
 			dots.forEach((dot, i) => {
 				dot.classList.toggle('active', i === index);
 			});
 		}
-
 		slider.addEventListener('scroll', () => {
 			const width = slider.clientWidth;
 			const index = Math.round(slider.scrollLeft / width);
 			updateDots(index);
 		});
 	</script>
-
 	<script id="programScrollDots">
 		document.addEventListener("DOMContentLoaded", function () {
 			const grid = document.querySelector(".programs__grid");
 			const dots = document.querySelectorAll(".scroll-dots .dot");
-
 			if (!grid || dots.length === 0) return;
-
 			function updateDots() {
 				const scrollTop = grid.scrollTop;
 				const maxScroll = grid.scrollHeight - grid.clientHeight;
-
 				// Prevent division issues
 				if (maxScroll <= 0) return;
-
 				const sectionSize = maxScroll / dots.length;
-
 				let activeIndex = Math.floor(scrollTop / sectionSize);
-
 				// Clamp index
 				if (activeIndex >= dots.length) {
 					activeIndex = dots.length - 1;
 				}
-
 				dots.forEach((dot, index) => {
 					dot.classList.toggle("active", index === activeIndex);
 				});
 			}
-
 			// Run on scroll
 			grid.addEventListener("scroll", updateDots);
-
 			// Run once on load
 			updateDots();
 		});
 	</script>
-
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const wrapper = document.querySelector(".programs__scroll-wrapper");
 			const cards = document.querySelectorAll(".program-card-scroll");
 			const dots = document.querySelectorAll(".programs__dots .dot");
-
 			if (!wrapper || cards.length === 0) return;
-
 			function updateDots() {
 				let scrollLeft = wrapper.scrollLeft;
 				let cardWidth = cards[0].offsetWidth + 16;
-
 				let index = Math.round(scrollLeft / cardWidth);
-
 				dots.forEach(dot => dot.classList.remove("active"));
 				if (dots[index]) dots[index].classList.add("active");
 			}
-
 			wrapper.addEventListener("scroll", updateDots);
 		});
 	</script>
-
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-
 			const cards = document.querySelectorAll('.program-card-scroll');
 			const dots = document.querySelectorAll('.programs__dots .dot');
 			const carousel = document.querySelector('.carousel');
-
 			if (!cards.length || !dots.length || !carousel) return;
-
 			let index = 0;
 			const total = cards.length;
-
 			let startX = 0;
 			let endX = 0;
 			let isDragging = false;
 			let autoSlide;
-
 			function update() {
 				const prev = (index - 1 + total) % total;
 				const next = (index + 1) % total;
-
 				cards.forEach((c, i) => {
 					c.classList.remove('active', 'left', 'right', 'hidden');
-
 					if (i === index) c.classList.add('active');
 					else if (i === prev) c.classList.add('left');
 					else if (i === next) c.classList.add('right');
 					else c.classList.add('hidden');
 				});
-
 				dots.forEach((d, i) => {
 					d.classList.toggle('active', i === index);
 				});
 			}
-
 			function nextSlide() {
 				index = (index + 1) % total;
 				update();
 			}
-
 			function startAuto() {
 				autoSlide = setInterval(nextSlide, 3000);
 			}
-
 			function stopAuto() {
 				clearInterval(autoSlide);
 			}
-
 			function handleSwipe() {
 				const diff = startX - endX;
-
 				if (Math.abs(diff) < 50) return;
-
 				if (diff > 0) index = (index + 1) % total; // left swipe
 				else index = (index - 1 + total) % total;  // right swipe
-
 				update();
 			}
-
 			// TOUCH EVENTS
 			carousel.addEventListener('touchstart', (e) => {
 				stopAuto();
 				startX = e.touches[0].clientX;
 			});
-
 			carousel.addEventListener('touchmove', (e) => {
 				endX = e.touches[0].clientX;
 			});
-
 			carousel.addEventListener('touchend', () => {
 				handleSwipe();
 				startAuto();
 			});
-
 			// MOUSE EVENTS
 			carousel.addEventListener('mousedown', (e) => {
 				stopAuto();
 				isDragging = true;
 				startX = e.clientX;
 			});
-
 			carousel.addEventListener('mousemove', (e) => {
 				if (!isDragging) return;
 				endX = e.clientX;
 			});
-
 			carousel.addEventListener('mouseup', () => {
 				if (!isDragging) return;
 				isDragging = false;
 				handleSwipe();
 				startAuto();
 			});
-
 			carousel.addEventListener('mouseleave', () => {
 				isDragging = false;
 			});
-
 			// DOT CLICK
 			dots.forEach((dot, i) => {
 				dot.addEventListener('click', () => {
@@ -1814,16 +1514,13 @@
 					startAuto();
 				});
 			});
-
 			// INIT
 			update();
 			startAuto();
-
 		});
 	</script>
 	<script>
 		const revealElements = document.querySelectorAll('.reveal-up');
-
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach(entry => {
 				if (entry.isIntersecting) {
@@ -1834,43 +1531,31 @@
 		}, {
 			threshold: 0.2
 		});
-
 		revealElements.forEach(el => observer.observe(el));
 	</script>
-
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-
 			const isMobile = window.matchMedia("(max-width: 768px)").matches;
 			if (!isMobile) return;
-
 			const cards = document.querySelectorAll("#solutions .program-card");
 			const dots = document.querySelectorAll("#solutions .scroll-dots .dot");
 			const grid = document.querySelector("#solutions .programs__grid");
-
 			if (!cards.length || !grid) return;
-
 			let index = 0;
 			const total = cards.length;
-
 			let startY = 0;
 			let endY = 0;
 			let autoSlide;
-
 			function update() {
-
 				const prev = (index - 1 + total) % total;
 				const next = (index + 1) % total;
-
 				cards.forEach((card, i) => {
-
 					card.classList.remove(
 						"active",
 						"prev",
 						"next",
 						"hidden"
 					);
-
 					if (i === index) {
 						card.classList.add("active");
 					}
@@ -1884,31 +1569,23 @@
 						card.classList.add("hidden");
 					}
 				});
-
 				dots.forEach((dot, i) => {
 					dot.classList.toggle("active", i === index);
 				});
 			}
-
 			function nextSlide() {
 				index = (index + 1) % total;
 				update();
 			}
-
 			function startAuto() {
 				autoSlide = setInterval(nextSlide, 3000);
 			}
-
 			function stopAuto() {
 				clearInterval(autoSlide);
 			}
-
 			function handleSwipe() {
-
 				const diff = startY - endY;
-
 				if (Math.abs(diff) < 50) return;
-
 				if (diff > 0) {
 					// Swipe Up
 					index = (index + 1) % total;
@@ -1916,25 +1593,20 @@
 					// Swipe Down
 					index = (index - 1 + total) % total;
 				}
-
 				update();
 			}
-
 			// Touch Events
 			grid.addEventListener("touchstart", (e) => {
 				stopAuto();
 				startY = e.touches[0].clientY;
 			});
-
 			grid.addEventListener("touchmove", (e) => {
 				endY = e.touches[0].clientY;
 			});
-
 			grid.addEventListener("touchend", () => {
 				handleSwipe();
 				startAuto();
 			});
-
 			// Dot Click
 			dots.forEach((dot, i) => {
 				dot.addEventListener("click", () => {
@@ -1944,18 +1616,13 @@
 					startAuto();
 				});
 			});
-
 			update();
 			startAuto();
-
 		});
 	</script>
-
 	<!-- <script>
 		document.addEventListener("DOMContentLoaded", () => {
-
 			const items = document.querySelectorAll('.right .item');
-
 			const observer = new IntersectionObserver((entries) => {
 				entries.forEach(entry => {
 					if (entry.isIntersecting) {
@@ -1966,11 +1633,8 @@
 			}, {
 				threshold: 0.25
 			});
-
 			items.forEach(item => observer.observe(item));
-
 		});
 	</script> -->
 </body>
-
 </html>
