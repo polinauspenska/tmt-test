@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="TMT Consultancy - Cryptocurrency">
+    <meta name="keywords"
+        content="bitcoin, bitcoin landing, blockchain, cryptocurrency, Cryptocurrency advisor, ICO Agency, ICO Consulting, ico landing, ico template, ico token, ico website">
+    <!-- SITE TITLE -->
+    <title>TMT Consultancy - Cryptocurrency</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo-icon.png">
+    <!-- Latest Bootstrap min CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/materialdesignicons-min.css">
+    <!--- owl carousel Css-->
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style-two.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<style>
+    html,
+    body {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .home_bg {
+        background-image: url('./assets/img/hero-bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    
+    /* Mobile version */
+    @media (max-width: 768px) {
+        .home_bg {
+            background-image: url('./assets/img/mob-bg2.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .hero-grad {
+        background: linear-gradient(to bottom, #ffff 0%, #dfe4e7 23%, #98a1a5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 0px 0px;
+        display: block;
+    }
+
+    .btn_tmt {
+        display: inline-block;
+        position: relative;
+        text-transform: capitalize;
+        background: inherit;
+        padding: 10px 36px;
+        color: #fff;
+        border: 1px solid #6CAEBD;
+        border-radius: 24px;
+        font-size: 16px;
+        transition: 0.3s;
+        font-family: poppins;
+        font-weight: 500;
+    }
+
+    .btn_tmt:hover {
+        background: #000;
+        transform: translateY(-2px);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        color: #fff;
+        /* default color */
+        transition: color 0.3s ease;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: #499FE5 !important;
+    }
+
+    #home {
+        display: flex;
+        align-items: center;
+        /* vertical center */
+    }
+
+    .btn-inner-glow {
+        font-family: 'Poppins', sans-serif;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 200px;
+        padding: 10px 28px;
+        border-radius: 999px;
+        font-size: 16px;
+        color: #fff;
+        background: #000;
+        border: 1px solid rgba(14, 229, 248, 0.6);
+        position: relative;
+        cursor: pointer;
+
+        /* INNER GLOW */
+        box-shadow:
+            inset 0 0 10px rgba(14, 229, 248, 0.6),
+            inset 0 0 20px rgba(14, 229, 248, 0.3);
+
+        backdrop-filter: blur(6px);
+        transition: all 0.3s ease;
+    }
+
+
+    /* Soft inner highlight (top shine) */
+    .btn-inner-glow::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 999px;
+        background: linear-gradient(180deg,
+                rgba(14, 229, 248, 0.25) 0%,
+                transparent 70%);
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    /* Icon */
+    .btn-inner-glow .icon {
+        color: #0EE5F8;
+    }
+
+    /* Hover = stronger inner glow */
+    .btn-inner-glow:hover {
+        box-shadow:
+            inset 0 2px 8px rgba(14, 229, 248, 0.7),
+            inset 0 -2px 8px rgba(14, 229, 248, 0.4);
+    }
+
+    .hero-text p {
+        margin: 0 auto;
+        /* centers the block */
+        text-align: center;
+        /* centers the text */
+    }
+
+    .about_p {
+        color: #fff;
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+</style>
+
+<body data-spy="scroll" data-offset="80">
+    <!-- particles -->
+    <!-- <div id="particles-js"></div>	 -->
+
+    <!-- START PRELOADER -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <div class="contact-us-body">
+        <!-- START NAVBAR -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky nav-bar-contact">
+            <div class="container d-flex align-items-center justify-content-between">
+
+                <!-- Logo (Left) -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/tmt-logo.svg" alt="TMT Consultancy">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+
+                <!-- Center Menu + Right Button -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+
+                    <!-- Empty div (helps center alignment) -->
+                    <div class="d-none d-lg-block"></div>
+
+                    <!-- Menu (Center) -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="about-us.html">About TMT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#who-we-serve">Who we serve</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <!-- START CONTENT -->
+        <section id="contact-us" class="contact-bg">
+            <div class="form-content-wrapper">
+                <div class="form-header">
+                    <h2 class="contact-us-title" style="font-size: 40;">Speak With Our Team
+                    </h2>
+                    <p>Tell us a bit about yourself, and our team will connect with you to explore tailored
+                        opportunities in the global financial market.</p>
+                </div>
+                <div class="contact-form">
+                    <form class="form" name="enq" method="post" action="contact-us.php" onsubmit="return validation();">
+                        <!-- Row 1 -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder="+971" name="phone" id="phone"
+                                    oninput="this.value=this.value.replace(/[^0-9+\-\s()]/g,'')">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="investment_size">Investment Size</label>
+
+                                <select id="investment_size" name="investment_size">
+                                    <option value="" selected disabled>Select your range</option>
+                                    <option value="under_10000">Under $10,000</option>
+                                    <option value="10000_50000">$10,000 - $50,000</option>
+                                    <option value="50000_100000">$50,000 - $100,000</option>
+                                    <option value="100000_250000">$100,000 - $250,000</option>
+                                    <option value="250000_500000">$250,000 - $500,000</option>
+                                    <option value="500000_plus">$500,000+</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your goals or interests"
+                                name="message"></textarea>
+                            <span class="word-count" style="font-size: 13px; color: #839199;">0/300</span>
+                        </div>
+
+
+                        <!-- Row 4 -->
+                        <div class="form-row full-width">
+                            <label class="checkbox-row">
+                                <input type="checkbox" id="agree" name="agree">
+
+                                <span>
+                                    I agree to the
+                                    <a href="#">Privacy Policy</a>
+                                    and consent to being contacted by TMT Consultancy.
+                                </span>
+                            </label>
+                        </div>
+                        <!-- Row 5 -->
+                        <div class="form-group full-width">
+                            <button type="submit" name="submit" class="submit-btn">
+                                Request Consultation
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- END CONTENT -->
+    <!-- Latest jQuery -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- modernizer JS -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- owl-carousel min js  -->
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+
+    <!-- magnific-popup js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- jquery counterup -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <!-- particles -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- WOW - Reveal Animations When You Scroll -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- scrolltopcontrol js -->
+    <script src="assets/js/scrolltopcontrol.js"></script>
+    <!-- scripts js -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
