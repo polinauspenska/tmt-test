@@ -1,0 +1,53 @@
+.site-footer {
+  background-color: var(--clr-bg-footer);
+  border-top: 1px solid #1a262e;
+  padding: 100px var(--footer-padding) 60px;
+  position: relative;
+}
+.footer__inner {
+  max-width: var(--footer-max-width);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.footer__top {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+.footer__contact { flex-shrink: 0; width: 280px; display: flex; flex-direction: column; gap: 14px; }
+.footer__logo { font-size: 20px; font-weight: var(--fw-semibold); margin-bottom: 8px; }
+.footer__contact p, .footer__contact a { font-size: var(--fs-small); color: var(--clr-text-muted); }
+.footer__social { display: flex; gap: 12px; margin-top: 8px; }
+.footer__social a {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--clr-border-card);
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.footer__social a:hover { border-color: var(--clr-glow); transform: translateY(-3px); color: var(--clr-accent-1); }
+
+.footer__nav-columns {
+  flex: 1;
+  display: flex;
+  gap: 60px;
+}
+.footer__col { display: flex; flex-direction: column; gap: 14px; }
+.footer__heading {
+  font-size: var(--fs-body); color: var(--clr-text);
+  line-height: 18px; letter-spacing: -0.16px; font-weight: var(--fw-medium);
+  margin-bottom: 6px;
+}
+.footer__link {
+  font-size: var(--fs-small); color: var(--clr-text-muted);
+  letter-spacing: var(--ls-small); opacity: 0.7;
+  transition: opacity 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+.footer__link:hover { opacity: 1; color: var(--clr-accent-1); transform: translateX(3px); }
+
+.footer__separator { height: 1px; background: var(--clr-separator); }
+.footer__bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer__copy { font-size: var(--fs-small); color: var(--clr-text-muted); }
+.footer__disclaimer { font-size: 12px; color: var(--clr-text-muted); opacity: 0.6; max-width: 720px; line-height: 1.6; }

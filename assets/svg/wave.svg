@@ -1,0 +1,11 @@
+<svg viewBox="0 0 2038 479" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="waveGrad" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#64e5ff" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#499fe5" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#080c0f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path d="M0,300 C400,100 700,420 1019,260 C1338,100 1638,420 2038,220 L2038,479 L0,479 Z" fill="url(#waveGrad)"/>
+  <path d="M0,340 C400,180 700,440 1019,300 C1338,160 1638,440 2038,260" stroke="#5acee5" stroke-opacity="0.25" stroke-width="1" fill="none"/>
+</svg>

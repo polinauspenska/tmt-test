@@ -1,101 +1,60 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Your Mail Has Been Send Successfully.</title>
-	<link rel="icon" type="image/png" href="./assets/img/logo-icon.png">
-	<!-- Latest Bootstrap min CSS -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<style>
-		html,
-		body {
-			font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-		}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your message has been sent successfully." />
+  <title>Your Mail Has Been Send Successfully.</title>
 
-		.welcome-area {
-			background-image: url('/assets/img/bg/thank-you-bg.jpg');
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-			height: 100vh;
-			/* ensure section has height */
-			position: relative;
-		}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
-		.welcome-area:before {
-			/* background: #151c2b; */
-			content: "";
-			height: 100%;
-			filter: alpha(opacity=80);
-			position: absolute;
-			width: 100%;
-		}
-
-		.hero-text {
-			margin-top: 200px;
-		}
-
-		.hero-text h1 {
-			color: #0EE5F8;
-			font-size: 60px;
-			font-weight: 500;
-			line-height: 70px;
-			margin-bottom: 20px;
-			position: relative;
-			text-transform: capitalize;
-		}
-
-		.hero-text h3 {
-			margin-bottom: 60px;
-			font-weight: 600;
-			color: #fff;
-			position: relative;
-		}
-
-		.back-home {
-			background: none;
-			border: 2px solid #0EE5F8;
-			border-radius: 500px;
-			color: #0EE5F8;
-			font-weight: 600;
-			position: relative;
-			margin: 15px 15px 0;
-			padding: 12px 36px;
-			text-transform: capitalize;
-			transition: all 0.2s ease 0s;
-			text-decoration: navajowhite;
-		}
-
-		.back-home:hover,
-		.back-home:focus {
-			background: #0EE5F8;
-			color: #fff;
-			border: 2px solid #0EE5F8;
-			text-decoration: none;
-		}
-	</style>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
-
 <body>
-	<section class="welcome-area" style="background-image: url('./assets/img/thank-you-bg.jpg');">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 col-sm-12 col-xs-12 text-center">
-					<div class="hero-text">
-						<h1>Thank you for your e-mail.</h1>
-						<h3>We Will contact you very soon.</h3>
-						<a class="back-home" href="index.html">Back To Home</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <header id="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-mark">T</span>
+        <span class="navbar__logo-text">TMT Consultancy</span>
+      </a>
+      <ul class="navbar__links" id="navLinks"></ul>
+      <a href="index.html" class="btn btn--primary">Back To Home</a>
+    </nav>
+  </header>
 
-	<!-- Latest jQuery -->
-	<script src="assets/js/jquery-1.12.4.min.js"></script>
-	<!-- Latest compiled and minified Bootstrap -->
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <main id="main-content">
+    <section id="thank-you">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="thank-you__check">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#04141a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h1 class="text-section hero-enter hero-enter--1">Thank you for your e-mail.</h1>
+        <p class="text-body-xl text-muted hero-enter hero-enter--2" style="margin-top:16px; margin-bottom:40px;">We Will contact you very soon.</p>
+        <a href="index.html" class="btn btn--primary btn--large hero-enter hero-enter--3">Back To Home</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer__inner">
+      <div class="footer__bottom">
+        <div class="footer__copy">Copyright © <span data-year>2026</span> TMT Consultancy. A subsidiary of AFM Holding. All Rights Reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
 </body>
-
 </html>
