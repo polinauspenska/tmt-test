@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="tmt-logo.svg">
 <style>
   :root{
     --cyan:#64E5FF;
@@ -31,8 +32,10 @@
     display:flex; align-items:center; justify-content:space-between;
     padding:0 5%;
   }
-  .logo{font-weight:700; font-size:19px; letter-spacing:.3px; color:#fff;}
-  .logo span{color:var(--cyan);}
+  .logo{display:inline-flex; align-items:center;}
+  .logo-img{ height:26px; width:auto; display:block; }
+  footer .logo-img{ height:32px; margin-bottom:4px; }
+  .mobile-menu .logo-img{ height:24px; }
   .nav-links{display:flex; gap:32px; list-style:none;}
   .nav-links a{font-size:14.5px; color:#fff; opacity:.9; transition:color .25s;}
   .nav-links a:hover{color:#499FE5;}
@@ -395,7 +398,7 @@
 <body>
 
 <nav>
-  <div class="logo">TMT <span>Consultancy</span></div>
+  <a href="index.html" class="logo" aria-label="TMT Consultancy home"><img class="logo-img" src="tmt-logo.svg" alt="TMT Consultancy"></a>
   <ul class="nav-links">
     <li><a href="about-us.html">About TMT</a></li>
     <li><a href="#solutions">Solutions</a></li>
@@ -411,6 +414,7 @@
 
 <div class="menu-backdrop" id="menuBackdrop"></div>
 <div class="mobile-menu" id="mobileMenu">
+  <img class="logo-img" src="tmt-logo.svg" alt="TMT Consultancy">
   <ul>
     <li><a href="about-us.html">About TMT</a></li>
     <li><a href="#solutions">Solutions</a></li>
@@ -626,7 +630,7 @@
 
 <!-- ===== FOOTER ===== -->
 <footer>
-  <div class="logo">TMT <span>Consultancy</span></div>
+  <img class="logo-img" src="tmt-logo.svg" alt="TMT Consultancy">
   <div class="footer-links">
     <a href="index.html">Home</a>
     <a href="terms-and-conditions.html">Terms of use</a>
