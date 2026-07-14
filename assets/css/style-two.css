@@ -481,22 +481,16 @@ p.section-title-white {
 
 @media (min-width: 200px) and (max-width: 812px) {
 	.navbar-custom {
-		background-color: #000;
-		padding: 24px 24px 50px !important;
+		background-color: transparent;
+		padding: 18px 20px !important;
 	}
 }
 
 @media (min-width: 200px) and (max-width: 768px) {
 	.navbar-custom {
-		background-color: #000;
-		padding: 15px 10px !important;
+		background-color: transparent;
+		padding: 16px 16px !important;
 
-	}
-}
-
-@media (min-width: 200px) and (max-width: 768px) {
-	.homepage.navbar-custom {
-		width: 85% !important;
 	}
 }
 
