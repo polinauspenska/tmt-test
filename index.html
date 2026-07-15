@@ -967,6 +967,8 @@
 		justify-content: center;
 		overflow: hidden;
 		min-height: 100vh;
+		width: 100%;
+		max-width: 100vw;
 		padding-top: 160px;
 		background: radial-gradient(ellipse at 50% 0%, #060a0d 0%, #000 60%);
 	}
@@ -982,9 +984,10 @@
 		box-sizing: border-box;
 		padding: 0 24px;
 	}
-	.hero-inner h2, .hero-inner p{
-		overflow-wrap: break-word;
+	.hero-inner h2, .hero-inner p, .hero-inner .hero-grad{
+		overflow-wrap: anywhere;
 		word-break: break-word;
+		max-width: 100%;
 	}
 	.hero-inner .btn-inner-glow{ margin-top: 0; margin-bottom: 26px; }
 	.hero-inner h2{
@@ -1045,8 +1048,8 @@
 	}
 	@media(max-width:760px){
 		#home.home_bg{ padding-top: 92px; }
-		.hero-inner{ max-width: 100%; padding: 0 22px; }
-		.hero-inner h2{ font-size: clamp(28px,8vw,38px); }
+		.hero-inner{ max-width: 100%; padding: 0 20px; }
+		.hero-inner h2{ font-size: clamp(24px,6.8vw,34px); }
 	}
 	@media(max-width:420px){
 		#home.home_bg{ padding-top: 76px; }
