@@ -976,8 +976,15 @@
 	.hero-inner{
 		position: relative; z-index: 5;
 		text-align: center;
+		width: 100%;
 		max-width: 760px;
+		min-width: 0;
+		box-sizing: border-box;
 		padding: 0 24px;
+	}
+	.hero-inner h2, .hero-inner p{
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 	.hero-inner .btn-inner-glow{ margin-top: 0; margin-bottom: 26px; }
 	.hero-inner h2{
