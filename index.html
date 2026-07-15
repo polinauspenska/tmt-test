@@ -1007,6 +1007,11 @@
 		visibility: visible !important;
 	}
 
+	html, body{
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+
 	/* ===================================================================
 	   HERO — dot-matrix globe (added on top of the existing hero styles;
 	   nothing above this block was changed, this only overrides/extends
@@ -1226,7 +1231,7 @@
 		transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
 	}
 	@media (max-width: 760px){
-		.tmt_grid_plane{ width: 260%; height: 18%; }
+		.tmt_grid_plane{ width: 160%; height: 18%; }
 	}
 </style>
 
@@ -2447,7 +2452,11 @@
 	    if(inner){
 	      const p1 = Math.min(1, scrollY / (home.offsetHeight*0.7));
 	      inner.style.opacity = 1 - p1;
-	      inner.style.filter = `blur(${p1*6}px)`;
+	      if(window.innerWidth > 760){
+	        inner.style.filter = `blur(${p1*6}px)`;
+	      } else {
+	        inner.style.filter = 'none';
+	      }
 	    }
 
 	    if(sec && (secText || secCards)){
