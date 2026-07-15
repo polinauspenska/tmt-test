@@ -3335,7 +3335,8 @@ ul.blog_pagination li a:hover {
 		gap: 0;
 		scroll-snap-type: x mandatory;
 		-webkit-overflow-scrolling: touch;
-		width: 100vw;
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.process-step {
