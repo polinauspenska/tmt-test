@@ -1010,6 +1010,10 @@
 	body{
 		overflow-x: hidden;
 		max-width: 100%;
+		overscroll-behavior-x: none;
+	}
+	html{
+		overscroll-behavior-x: none;
 	}
 
 	/* ===================================================================
@@ -2450,14 +2454,13 @@
 
 	  function smoothstep(p){ return p*p*(3-2*p); }
 
+	  if(inner){
+	    inner.style.opacity = 1;
+	  }
+
 	  function update(){
 	    const wh = window.innerHeight;
 	    const scrollY = window.scrollY || document.scrollingElement.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
-
-	    if(inner){
-	      const p1 = Math.min(1, scrollY / (home.offsetHeight*0.7));
-	      inner.style.opacity = 1 - p1;
-	    }
 
 	    if(sec && (secText || secCards)){
 	      const secTop = sec.offsetTop;
