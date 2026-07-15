@@ -1007,7 +1007,7 @@
 		visibility: visible !important;
 	}
 
-	html, body{
+	body{
 		overflow-x: hidden;
 		max-width: 100%;
 	}
@@ -2447,7 +2447,7 @@
 
 	  function update(){
 	    const wh = window.innerHeight;
-	    const scrollY = window.scrollY;
+	    const scrollY = window.scrollY || document.scrollingElement.scrollTop || document.documentElement.scrollTop || document.body.scrollTop;
 
 	    if(inner){
 	      const p1 = Math.min(1, scrollY / (home.offsetHeight*0.7));
