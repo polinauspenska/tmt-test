@@ -306,119 +306,54 @@
 	}
 
 	@media (max-width:768px) {
+		/* Simple stacked list on mobile -- the old absolute-positioned
+		   coverflow carousel caused cards to visually overlap each other
+		   since its transform offsets didn't reliably clear cards with
+		   variable text length. A normal-flow stack has no overlap risk. */
 		#solutions .programs-carousel {
 			position: relative;
 		}
 
 		#solutions .programs__grid {
-			position: relative;
-			height: 420px;
-			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			height: auto;
+			overflow: visible;
 		}
 
-		/* IMPORTANT: reset default grid behavior */
 		#solutions .program-card {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 85%;
-			height: 50px;
-			transform: translate(-50%, -50%) scale(0.8);
-			opacity: 0;
-			transition: all 0.5s ease;
-			padding: 15px 20px;
-			min-height: 120px;
-			pointer-events: none;
+			position: static;
+			width: 100%;
+			transform: none !important;
+			opacity: 1 !important;
+			transition: none;
+			padding: 20px 22px;
+			min-height: 0;
+			pointer-events: auto;
 		}
 
 		#solutions .program-card__title {
 			font-family: 'Poppins', sans-serif;
 			font-weight: 600;
-
 			font-size: 16px;
-			margin-bottom: 15px;
+			margin-bottom: 8px;
 			line-height: 140%;
 			letter-spacing: -0.5px;
-			text-align: center;
-
-
+			text-align: left;
 		}
 
 		#solutions .program-card__desc {
 			font-family: 'Poppins', sans-serif;
 			font-weight: 400;
-			font-size: 12px !important;
-
+			font-size: 13px !important;
 			line-height: 140%;
 			letter-spacing: -0.5px;
 			color: #FFFFFF;
-
-		}
-
-		/* ACTIVE CARD (center) */
-		#solutions .program-card.active {
-			opacity: 1;
-			transform: translate(-50%, -50%) scale(1);
-			z-index: 3;
-			pointer-events: auto;
-		}
-
-		#solutions .program-card.prev {
-			opacity: 0.5;
-			transform: translate(-50%, -135%) scale(0.88);
-			z-index: 2;
-		}
-
-		#solutions .program-card.prev .program-card__title,
-		#solutions .program-card.next .program-card__title {
-			font-size: 12px;
-			margin-top: 5px;
-		}
-
-		#solutions .program-card.prev .program-card__desc,
-		#solutions .program-card.next .program-card__desc {
-			font-size: 10px !important;
-		}
-
-
-		#solutions .program-card.next {
-			opacity: 0.5;
-			transform: translate(-50%, 35%) scale(0.88);
-			z-index: 2;
-		}
-
-		/* HIDDEN CARDS */
-		#solutions .program-card.hidden {
-			opacity: 0;
-			transform: translate(-50%, -50%) scale(0.7);
-			z-index: 1;
 		}
 
 		#solutions .scroll-dots {
-			position: absolute;
-			right: 10px;
-			/* 👈 bring inside screen */
-			top: 50%;
-			transform: translateY(-50%);
-			z-index: 9999;
-
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-		}
-
-		#solutions .scroll-dots .dot {
-			width: 8px;
-			height: 8px;
-			border-radius: 50%;
-			background: rgba(255, 255, 255, 0.3);
-			transition: all 0.3s ease;
-		}
-
-		#solutions .scroll-dots .dot.active {
-			height: 24px;
-			border-radius: 20px;
-			background: #fff;
+			display: none;
 		}
 	}
 
@@ -2089,8 +2024,10 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 
-			const isMobile = window.matchMedia("(max-width: 768px)").matches;
-			if (!isMobile) return;
+			// Mobile carousel disabled -- #solutions now renders as a plain
+			// stacked list on mobile (see the max-width:768px CSS block),
+			// so this absolute-position/auto-slide logic no longer runs.
+			return;
 
 			const cards = document.querySelectorAll("#solutions .program-card");
 			const dots = document.querySelectorAll("#solutions .scroll-dots .dot");
