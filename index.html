@@ -968,12 +968,12 @@
 		overflow: hidden;
 		min-height: 100vh;
 		width: 100%;
-		max-width: 100vw;
+		max-width: 100%;
 		padding-top: 160px;
 		background: radial-gradient(ellipse at 50% 0%, #060a0d 0%, #000 60%);
 	}
 
-	#stars{ position: absolute; inset: 0; z-index: 0; }
+	#stars{ position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; display: block; }
 
 	.hero-inner{
 		position: relative; z-index: 5;
@@ -1091,7 +1091,7 @@
 			position: fixed;
 			inset: 0;
 			width: 100%;
-			max-width: 100vw;
+			max-width: 100%;
 			box-sizing: border-box;
 			height: 100vh !important;
 			margin: 0;
@@ -1152,7 +1152,7 @@
 	.tmt_grid_bg{
 		position: absolute; inset: 0; z-index: 0; overflow: hidden;
 		perspective: 180px; perspective-origin: 50% 50%;
-		max-width: 100vw;
+		max-width: 100%;
 		transform: translateZ(0);
 		-webkit-transform: translateZ(0);
 	}
@@ -2178,8 +2178,9 @@
 	  const ctx = canvas.getContext('2d');
 	  let stars = [];
 	  function resize(){
-	    canvas.width = window.innerWidth;
-	    canvas.height = document.getElementById('home').offsetHeight;
+	    const home = document.getElementById('home');
+	    canvas.width = home.clientWidth || window.innerWidth;
+	    canvas.height = home.offsetHeight;
 	    const count = Math.floor((canvas.width*canvas.height)/9000);
 	    stars = Array.from({length:count},()=>({
 	      x:Math.random()*canvas.width,
